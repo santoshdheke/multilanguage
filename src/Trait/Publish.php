@@ -39,7 +39,7 @@ trait Publish
 
         $languages = Language::get();
 
-        $stub = config_path('language.stub');
+        $stub = base_path('vendor/ssgroup/language/src/config/language.stub');
         $file = file_get_contents($stub);
 
         $strs = [];
