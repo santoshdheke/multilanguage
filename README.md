@@ -8,3 +8,19 @@ after install package you can publish vendor
 
 and check your browser
 > {{url}}/ssgroup-language/admin/language
+
+this this route is change your locale 
+
+```
+   Route::get('change/locale/{locale}', function($locale){
+
+        if (! in_array($locale, ['en', 'np'])) {
+            abort(400);
+        }
+
+           session()->put('locale', $locale);
+
+        return redirect()->back();
+
+    })->name('change.locale');
+```
