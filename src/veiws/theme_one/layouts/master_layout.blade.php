@@ -108,25 +108,6 @@
         <!-- Right navbar links -->
         <ul class="navbar-nav ml-auto">
 
-            <!-- Notifications Dropdown Menu -->
-            <li class="nav-item dropdown">
-                <a class="nav-link" data-toggle="dropdown" href="#" style="padding: 0px;height: auto;">
-                    <img class="img-circle img-bordered-sm"  onerror="this.src='{{ asset('user.png') }}'" src="{{ asset('user.png') }}" alt="User Image" style="height: 30px; width: 30px;">
-                    User
-                    <i class="fas fa-angle-down"></i>
-                </a>
-                <div class="dropdown-menu dropdown-menu-md dropdown-menu-right">
-
-                    <a href="{{ route('admin.profile.index') }}" class="dropdown-item">
-                        <i class="fas fa-user"></i> Profile
-                    </a>
-                    <div class="dropdown-divider"></div>
-                    <a href="#" class="dropdown-item" onclick="$('#logoutform').submit()">
-                        <i class="fas fa-lock"></i> Logout
-                    </a>
-                    <form action="{{ route('admin.logout.post') }}" method="post" id="logoutform">@csrf</form>
-                </div>
-            </li>
         </ul>
     </nav>
     <!-- /.navbar -->
@@ -163,10 +144,7 @@
                         <h1 class="m-0">{{ $title ?? "Dashboard" }}</h1>
                     </div><!-- /.col -->
                     <div class="col-sm-6">
-                        <ol class="breadcrumb float-sm-right">
-                            <li class="breadcrumb-item"><a href="{{ route('admin.dashboard.index') }}">Home</a></li>
-                            <li class="breadcrumb-item active">{{ $title ?? "Dashboard" }}</li>
-                        </ol>
+                        
                     </div><!-- /.col -->
                 </div><!-- /.row -->
             </div><!-- /.container-fluid -->
