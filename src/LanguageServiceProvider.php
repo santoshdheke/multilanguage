@@ -28,6 +28,6 @@ class LanguageServiceProvider extends ServiceProvider
         $this->publishes([
             __dir__.'/public/' => public_path(""),
             __dir__.'/config/languagesetup.php' => config_path("languagesetup.php"),
-        ]);
+        ],'ssgroup');
     }
 }
