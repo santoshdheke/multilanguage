@@ -13,10 +13,10 @@ if (config('languagesetup.middleware')) {
 }
 
 Route::group($arr, function () {
-    Route::group(['prefix' => "admin"],function(){
+    Route::group(['prefix' => "admin",'as' => 'admin.'],function(){
         Route::resource('language', 'LanguageController');
+        Route::get('backup', 'LanguageController@public')->name("language.backup");
     });
-    Route::post('backup', 'LanguageApiController@public')->name("language.backup");
     Route::post('public', 'LanguageApiController@public');
     Route::apiResource('language', 'LanguageApiController')->except(['show']);
 });

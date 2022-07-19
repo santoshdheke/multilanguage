@@ -2,6 +2,8 @@
 
 namespace Ssgroup\Language\Trait;
 
+use Ssgroup\Language\Models\Language;
+
 trait Publish
 {
     public function isDirectory($directory)
@@ -34,6 +36,7 @@ trait Publish
 
     public function public()
     {
+
         $languages = Language::get();
 
         $stub = config_path('language.stub');
@@ -98,6 +101,6 @@ trait Publish
         file_put_contents($path, $file, 0);
         $this->filesPut($path, $file);
 
-        return redirect()->back()->with('success', 'Language Backup Successful.');
+        return redirect("ssgroup-language/admin/language")->with('success', 'Language Backup Successful.');
     }
 }

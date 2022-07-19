@@ -10,7 +10,7 @@
         <label>Key :</label>
         @php($olddata = old('key') ?? $row->key ?? '')
         <input type="text" value="{{ $olddata }}" name="key" class="form-control" placeholder="Enter Key">
-        @if($errors->has('key'))
+        @if(isset($errors) && $errors->has('key'))
             <div class="form-error-message">{{ $errors->first('key') }}</div>
         @endif
     </div>
@@ -21,7 +21,7 @@
     <label>English :</label>
     @php($olddata = old('en') ?? config("language.en.".$key) ?? '')
     <input type="text" value="{{ $olddata }}" name="en" class="form-control" placeholder="Enter In English">
-    @if($errors->has('en'))
+    @if(isset($errors) && $errors->has('en'))
         <div class="form-error-message">{{ $errors->first('en') }}</div>
     @endif
 </div>
@@ -30,7 +30,7 @@
     <label>Nepali :</label>
     @php($olddata = old('np') ?? config("language.np.".$key) ?? '')
     <input type="text" value="{{ $olddata }}" name="np" class="form-control" placeholder="Enter In Nepali">
-    @if($errors->has('np'))
+    @if(isset($errors) && $errors->has('np'))
         <div class="form-error-message">{{ $errors->first('np') }}</div>
     @endif
 </div>
