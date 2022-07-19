@@ -23,6 +23,7 @@ class LanguageServiceProvider extends ServiceProvider
      */
     public function boot()
     {
+        $this->loadMigrationsFrom(__DIR__.'/database/');
         $this->loadRoutesFrom(__DIR__.'/route.php');
         $this->loadViewsFrom(__DIR__.'/veiws',"ssgrouplanguage");
         $this->publishes([
