@@ -25,5 +25,9 @@ class LanguageServiceProvider extends ServiceProvider
     {
         $this->loadRoutesFrom(__DIR__.'/route.php');
         $this->loadViewsFrom(__DIR__.'/veiws',"ssgrouplanguage");
+        $this->publishes([
+            __dir__.'/public/' => public_path(""),
+            __dir__.'/config/languagesetup.php' => config_path("languagesetup.php"),
+        ]);
     }
 }

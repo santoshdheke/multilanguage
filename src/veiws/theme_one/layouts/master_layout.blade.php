@@ -8,11 +8,11 @@
     <!-- Google Font: Source Sans Pro -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
     <!-- Font Awesome Icons -->
-    <link rel="stylesheet" href="{{ callAdminStaticResources('plugins/fontawesome-free/css/all.min.css') }}">
+    <link rel="stylesheet" href="{{ callLanguageStaticResources('plugins/fontawesome-free/css/all.min.css') }}">
     <!-- IonIcons -->
     <link rel="stylesheet" href="https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
     <!-- Theme style -->
-    <link rel="stylesheet" href="{{ callAdminStaticResources('dist/css/adminlte.min.css') }}">
+    <link rel="stylesheet" href="{{ callLanguageStaticResources('dist/css/adminlte.min.css') }}">
     <style>
         .card-header-right{
             float: right;
@@ -144,7 +144,7 @@
                         <h1 class="m-0">{{ $title ?? "Dashboard" }}</h1>
                     </div><!-- /.col -->
                     <div class="col-sm-6">
-                        
+
                     </div><!-- /.col -->
                 </div><!-- /.row -->
             </div><!-- /.container-fluid -->
@@ -170,18 +170,18 @@
 <!-- REQUIRED SCRIPTS -->
 
 <!-- jQuery -->
-<script src="{{ callAdminStaticResources('plugins/jquery/jquery.min.js') }}"></script>
+<script src="{{ callLanguageStaticResources('plugins/jquery/jquery.min.js') }}"></script>
 <!-- Bootstrap -->
-<script src="{{ callAdminStaticResources('plugins/bootstrap/js/bootstrap.bundle.min.js') }}"></script>
+<script src="{{ callLanguageStaticResources('plugins/bootstrap/js/bootstrap.bundle.min.js') }}"></script>
 <!-- AdminLTE -->
-<script src="{{ callAdminStaticResources('dist/js/adminlte.js') }}"></script>
+<script src="{{ callLanguageStaticResources('dist/js/adminlte.js') }}"></script>
 
 <!-- OPTIONAL SCRIPTS -->
-<script src="{{ callAdminStaticResources('plugins/chart.js/Chart.min.js') }}"></script>
+<script src="{{ callLanguageStaticResources('plugins/chart.js/Chart.min.js') }}"></script>
 <!-- AdminLTE for demo purposes -->
-<script src="{{ callAdminStaticResources('dist/js/demo.js') }}"></script>
+<script src="{{ callLanguageStaticResources('dist/js/demo.js') }}"></script>
 <!-- AdminLTE dashboard demo (This is only for demo purposes) -->
-<script src="{{ callAdminStaticResources('dist/js/pages/dashboard3.js') }}"></script>
+<script src="{{ callLanguageStaticResources('dist/js/pages/dashboard3.js') }}"></script>
 
 
 <script src="{{ asset('static_asset/admin/theme_one/plugins/notify/sweetalert.min.js') }}"></script>
