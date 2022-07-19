@@ -1,0 +1,30 @@
+{
+    "name": "ssgroup/language",
+    "type": "library",
+    "license": "mit",
+    "autoload": {
+        "psr-4": {
+            "Ssgroup\\Language\\": "src/"
+        },
+        "files": [
+            "src/helper.php"
+        ]
+    },
+    "authors": [
+        {
+            "name": "Santosh Dheke",
+            "email": "santoshdheke46@gmail.com"
+        }
+    ],
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Ssgroup\\Language\\LanguageServiceProvider"
+            ]
+        }
+    },
+    "minimum-stability": "dev",
+    "require": {
+        "ssgroup/apimanager": "dev-master"
+    }
+}
