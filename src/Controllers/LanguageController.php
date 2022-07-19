@@ -4,10 +4,10 @@ namespace Ssgroup\Language\Controllers;
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
-use Module\Common\ReturnArrayMessages;
 use Ssgroup\ApiManager\Controllers\ApiBaseController;
 use Ssgroup\Language\Models\Language;
 use Ssgroup\Language\Trait\Publish;
+use Ssgroup\Language\Trait\ReturnArrayMessages;
 
 class LanguageController extends LanguageBaseController
 {
